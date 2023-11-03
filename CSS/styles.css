@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.index-background{
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-image: url("https://images.pexels.com/photos/2062426/pexels-photo-2062426.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+}
+
+.index-title{
+    background-color: rgba( 0, 0, 0, 0.3);
+    display: inline-block;
+    padding: 15px 25px;
+    color: #fff;
+    border: solid 2px rgba( 255, 255, 255, 0.4);
+    border-radius: 5px;
+    font-size: 3rem;
+    font-family: Helvetica, sans-serif
+}
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    width: 90%;
+    max-width: 1000px;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu li{
+    list-style: none
+}
+
+.menu li a{
+    color: #000;
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.menu li a:hover{
+    color: #fff;
+}
+
+.menu-item{
+    width: 30%;
+    min-width: 150px;
+    height: 200px;
+    border-radius: 20px;
+    border: 2px solid rgba( 255, 255, 255, 0.4);
+    text-align: center;
+    transition: all .5s linear;
+}
+
+.item1, .item2, .item3{
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+}
+
+.item3:hover{
+    background-image: url("https://www.allrecipes.com/thmb/EL5qpwVUDUw5b4Umm3C4Ke86-74=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/8369578_Sugar-Cookie-Martini_Chef-Mo_4x3-4357a22ff5974a9ab5cb08ae3faee45f.jpg");
+}
+.item2:hover{
+    background-image: url("https://www.allrecipes.com/thmb/lI8EjhxghalUpVHjQ4EDGkb1I2M=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/16755-Basic-Corn-Muffins-DDMFS-4x3-712741c954da453597df6a83498959d7.jpg");
+}
+.item1:hover{
+    background-image: url("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F8939927.jpg&q=60&c=sc&orient=true&poi=auto&h=512");
+}
